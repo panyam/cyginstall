@@ -1,0 +1,85 @@
+.header_cell {
+    font-weight: bold;
+    text-align: center;
+}
+
+.mouse_over_row {
+    background: #ffddcc;
+}
+
+.mouse_out_row {
+    background: #ffffff;
+}
+
+.mouse_selected_row {
+    background: #dddddd;
+}
+
+#package_list_panel {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    right: 400px;
+    bottom: 0px;
+    overflow: none;
+    /*border: solid 1px red;*/
+}
+
+#mirror_packages_heading
+{
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+    overflow: none;
+    width: 99%;
+    float: right;
+    right: 0;
+    top: 0px;
+    /*border: solid 1px blue;*/
+}
+
+#mirror_packages_div
+{
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    overflow: auto;
+    float: right;
+    right: 0px;
+    width: 99%;
+    top: 20px;
+    bottom: 40px;
+    /*border: solid 1px blue;*/
+}
+
+#mirror_packages_footer
+{
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    overflow: none;
+    float: right;
+    right: 0px;
+    width: 99%;
+    height: 30px;
+    bottom: 0px;
+    /*border: solid 1px green;*/
+}
+
+#mirror_list_parent {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    bottom: 0px;
+    width: 400px;
+    /*border: solid 1px red;*/
+    overflow: hidden;
+}
+
+#mirror_list_div {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    bottom: 0px;
+    right: 0px;
+    /*border: solid 1px blue;*/
+    overflow: auto;
+}

@@ -1,0 +1,57 @@
+
+<html>
+    <head>
+        <title>Cygwin Downloader</title>
+        <script src = "/static/js/jquery-1.4.4.min.js"></script>
+        <script src = "/static/js/misc.js"></script>
+        <script src = "/static/js/downloader.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/css/index.css"/> 
+    </head>
+    <body>
+        <center> <h1></h1> </center>
+        <div id = "package_list_panel">
+            <span id = "mirror_packages_heading">Packages<span id = 'mirror_packages_num_left_span'></span></span><br/>
+            <!--
+            <div id = "mirror_packages_header">
+                <table width = "100%" border = 1>
+                    <tr>
+                        <td width = '50'><strong><center>
+                            <a href='javascript:void(0)' onclick='toggleOrdering(ORDERBY_SELECTED)'>Select</a>
+                            <input type = checkbox id = 'selectAllPackagesCheckbox'
+                                   onchange = 'onSelectAllPackages(event);'/>
+                        </center></strong></td>
+                        <td style='width: 350px'><strong><center>
+                            <a href='javascript:void(0)' onclick='toggleOrdering(ORDERBY_NAME)'>
+                                Name/Description
+                            </a>
+                        </center></strong></td>
+                        <td width = '150'><strong><center>
+                            <a href='javascript:void(0)' onclick='toggleOrdering(ORDERBY_PROGRESS)'>Progress</a>
+                            / 
+                            <a href='javascript:void(0)' onclick='toggleOrdering(ORDERBY_SIZE)'>Size</a>
+                        </center></strong></td>
+                    </tr>
+                </table>
+            </div>
+            -->
+
+            <div  id = "mirror_packages_div"></div>
+
+            <div  id = "mirror_packages_footer">
+                <center>
+                <input id = "download_button" type = "button"
+                       value = "Download" onclick = "handleOnDownload(event);"/>
+                <input id = "show_completed_checkbox" type = "checkbox"
+                       checked = 'true' onchange = "createPackageListHtml();"/>
+                       Show Completed
+                </center>
+            </div>
+        </div>
+
+        <div id = mirror_list_parent>
+            <h2><center><strong>Mirrors</strong></center></h2>
+            <div id = "mirror_list_div">
+            </div>
+        </div>
+    </body>
+</html>
